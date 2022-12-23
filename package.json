@@ -2,17 +2,28 @@
   "name": "basic-discord-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
-  "type": "module",
+  "main": "./dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "glob": "^8.0.3"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/node": "^18.7.18",
+    "@types/node-cron": "^3.0.4",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
   }
 }
